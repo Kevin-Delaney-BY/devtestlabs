@@ -9,6 +9,6 @@
     ],
     "targetOsType": "Windows",
     "runCommand": {
-        "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./win_file_test.ps1 ', 'putty', '\"')]"
+        "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./win_file_test.ps1 ', 'Test', '\"')]"
     }
 }
