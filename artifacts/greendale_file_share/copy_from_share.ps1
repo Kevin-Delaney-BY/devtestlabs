@@ -1,10 +1,11 @@
 [CmdletBinding()]
-    param(
-        [string] $UserName,
-        [string] $Password
-        #[string] $Description = 'DevTestLab artifact installer',
-        #[switch] $Overwrite = $true
-        )
+param(
+    [Parameter(ParameterSetName='CustomUser')]
+    [string] $UserName = 'artifactInstaller',
+    [Parameter(ParameterSetName='CustomUser')]
+    [string] $Password,
+    [int] $PSVersionRequired = 3
+)
  
 
 #$username = "greendale\adm_pat"
