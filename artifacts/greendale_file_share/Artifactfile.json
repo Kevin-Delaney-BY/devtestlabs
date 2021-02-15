@@ -8,6 +8,18 @@
         "Test"
     ],
     "targetOsType": "Windows",
+    "parameters": {
+        "installUsername": {
+            "type": "string",
+            "displayName": "Domain username",
+            "description": "User with admin rights to copy files from domain"
+        },
+        "installPassword": {
+            "type": "securestring",
+            "displayName": "Install Password",
+            "description": "Password for the domain user"
+        }
+    },
     "runCommand": {
         "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./copy_from_share.ps1 ', 'Test', '\"')]"
     }
