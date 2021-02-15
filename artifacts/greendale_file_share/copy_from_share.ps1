@@ -1,7 +1,7 @@
 [CmdletBinding()]
     param(
         [string] $UserName,
-        [string] $Password,
+        [string] $Password
         #[string] $Description = 'DevTestLab artifact installer',
         #[switch] $Overwrite = $true
         )
