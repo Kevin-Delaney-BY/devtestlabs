@@ -5,7 +5,6 @@
     "description": "Authenticates against a domain to copy a file from a secure share",
     "tags": [
         "Windows",
-        "Test"
     ],
     "targetOsType": "Windows",
     "parameters": {
@@ -21,6 +20,6 @@
         }
     },
     "runCommand": {
-        "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./copy_from_share.ps1 ', 'Test', ' -UserName ', parameters('installUsername'), ' -Password ', parameters('installPassword'), '\"')]"
+        "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./copy_from_share.ps1 ', 'Windows', ' -UserName ', parameters('installUsername'), ' -Password ', parameters('installPassword'), '\"')]"
     }
 }
