@@ -1,0 +1,14 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
+    "title": "FileTest",
+    "publisher": "ITG",
+    "description": "Creates txt file on C drive",
+    "tags": [
+        "Windows",
+        "Test"
+    ],
+    "targetOsType": "Windows",
+    "runCommand": {
+        "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./copy_from_share.ps1 ', 'Test', '\"')]"
+    }
+}
