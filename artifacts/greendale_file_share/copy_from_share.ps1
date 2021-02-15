@@ -10,7 +10,7 @@ param(
 
 #$username = "greendale\adm_pat"
 #$pass= 'F00tball'
-$secpassword = ConvertTo-SecureString $pass -AsPlainText -Force
+$secpassword = ConvertTo-SecureString $password -AsPlainText -Force
 $credentials = New-Object System.Management.Automation.PSCredential ($username,$secpassword)
 $server = "10.10.10.5"
 $source = "\\10.10.10.5\greendaleshare\test_file.txt"
