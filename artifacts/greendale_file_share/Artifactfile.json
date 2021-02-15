@@ -21,6 +21,6 @@
         }
     },
     "runCommand": {
-        "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./copy_from_share.ps1 ', 'Test', '\"')]"
+        "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./copy_from_share.ps1 ', 'Test', ' -UserName ', parameters('installUsername'), ' -Password ', parameters('installPassword'), '\"')]"
     }
 }
