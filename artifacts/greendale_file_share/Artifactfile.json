@@ -1,8 +1,8 @@
 {
     "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
-    "title": "FileTest",
+    "title": "Copy file from domain share",
     "publisher": "ITG",
-    "description": "Creates txt file on C drive",
+    "description": "Authenticates against a domain to copy a file from a secure share",
     "tags": [
         "Windows",
         "Test"
