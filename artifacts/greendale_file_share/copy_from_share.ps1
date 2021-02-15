@@ -1,6 +1,14 @@
-$username = "greendale\adm_pat"
-$pass= 'F00tball'
-$password = ConvertTo-SecureString $pass -AsPlainText -Force
+[CmdletBinding()]
+    param(
+        [string] $UserName,
+        [string] $Password,
+        #[string] $Description = 'DevTestLab artifact installer',
+        #[switch] $Overwrite = $true
+ 
+
+#$username = "greendale\adm_pat"
+#$pass= 'F00tball'
+#$password = ConvertTo-SecureString $pass -AsPlainText -Force
 $credentials = New-Object System.Management.Automation.PSCredential ($username,$password)
 $server = "10.10.10.5"
 $source = "\\10.10.10.5\greendaleshare\test_file.txt"
