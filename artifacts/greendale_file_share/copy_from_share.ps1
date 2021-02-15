@@ -1,7 +1,7 @@
 [CmdletBinding()]
 param(
     [Parameter(ParameterSetName='CustomUser')]
-    [string] $UserName = 'artifactInstaller',
+    [string] $UserName, #= 'artifactInstaller',
     [Parameter(ParameterSetName='CustomUser')]
     [string] $Password,
     [int] $PSVersionRequired = 3
